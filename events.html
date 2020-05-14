@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Javascript Page</title>
+        <!-- java script function-->
+        <script>
+            function message(msg)
+            {
+                document.getElementById("output").innerHTML = msg + " event";
+            }
+        </script>
+    </head>
+    <!-- triggering onload and onresize event-->
+    <body onload="message('ONLOAD')" onresize="message('ONRESIZE')">
+        <h1>
+            Javascript events respomding to events.
+        </h1>
+        <!-- triggering onclick event-->
+        <p onclick="message('ONCLICK')">It is possible to call the function based on events</p><br><br>
+        <p>click on the paragraph above to trigger an <em>onclick</em> event.Reload the page to see an onload event</p>
+        <!--the output of the corresponding events is shown in this paragraph tag-->
+        <p id="output"></p>
+    </body>
+</html>
